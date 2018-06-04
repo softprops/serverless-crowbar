@@ -26,7 +26,7 @@ that is _born_ in production.
 
 ```bash
 $ serverless install \
-  --url https://github.com/softprops/serverless-lando \
+  --url https://github.com/softprops/serverless-crowbar \
   --name my-new-app \
   && cd my-new-app \
   && AWS_PROFILE=prod make dependencies deploy
