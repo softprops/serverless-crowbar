@@ -11,6 +11,12 @@ dependencies: ## Install build dependencies
 	@echo "installing dependencies..."
 	@npm install --silent
 
+package: ## Compile and package application
+	@echo "packaging function..."
+	@./node_modules/.bin/serverless \
+		package \
+		--stage $(STAGE)
+
 deploy: ## Deploy application
 	@echo "deploying function..."
 	@./node_modules/.bin/serverless \
