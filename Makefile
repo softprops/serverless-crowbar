@@ -11,7 +11,7 @@ dependencies: ## Install build dependencies
 	@echo "installing dependencies..."
 	@npm install --silent
 
-package: ## Compile and package application
+package: dependencies ## Compile and package application
 	@echo "packaging function..."
 	@./node_modules/.bin/serverless \
 		package \
