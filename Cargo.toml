@@ -11,6 +11,3 @@ name = "lambda"
 cpython = "0.1"
 crowbar = "0.2"
 python3-sys = { version = "0.1.3", features = ["python-3-4"], optional = true }
-
-[features]
-default = ["cpython/python3-sys"]
