@@ -8,6 +8,5 @@ crate-type = ["cdylib"]
 name = "lambda"
 
 [dependencies]
-cpython = "0.1"
-crowbar = "0.2"
-python3-sys = { version = "0.1.3", features = ["python-3-4"], optional = true }
+crowbar = { git = "https://github.com/softprops/rust-crowbar.git", branch = "re-export-cpython-macros" }
+python3-sys = { version = "0.2.1", features = ["python-3-4"], optional = true }
