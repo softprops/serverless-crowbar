@@ -35,3 +35,9 @@ logs: ## Fetches a stream of logs
 	@./node_modules/.bin/serverless \
 		logs -f hello \
 		--stage $(STAGE)
+
+invoke: ## Invoke function remotely (requires deployment)
+	@echo "invoking function..."
+	@./node_modules/.bin/serverless \
+		invoke -f hello \
+		--stage $(STAGE)
