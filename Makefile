@@ -1,5 +1,5 @@
 # https://serverless.com/framework/docs/providers/aws/guide/credentials/
-STAGE ?= "prod"
+STAGE ?= "dev"
 
 help:
 	@echo Public targets:

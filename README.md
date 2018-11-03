@@ -36,7 +36,7 @@ $ serverless install \
   --url https://github.com/softprops/serverless-crowbar \
   --name my-new-app \
   && cd my-new-app \
-  && AWS_PROFILE=prod make dependencies deploy
+  && AWS_PROFILE=prod STAGE=prod make dependencies deploy
 ```
 
 `make dependencies` will make sure npm dependencies are installed, this only needs run once.
